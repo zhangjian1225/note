@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>账务管理</title>
+    <link rel="icon" href="./static/image/title.ico" type="image/x-icon"/> 
+    <link rel="stylesheet" type="text/css" href="./static/font/iconfont.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      html,body,#app{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #warnDrak{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, .9);
+        color: #fff;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 2rem;
+        display: none;
+      }
+      #loading{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, .9);
+        display: none;
+      }
+      .loadImg{
+        width: 100%;
+        margin-top: 6rem;
+        position: relative;
+      }
+      .loadImg img{
+        width: 10rem;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -5rem;
+      }
+      #setMessage{
+        width: 100%;
+        height: 2rem;
+        font-weight: bold;
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        position: relative;
+        top: 2rem;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="loading">
+      <p class="loadImg"><img src="./static/image/load.gif"/></p>
+      <p id="setMessage"> 登录中 . . . </p>
+    </div>
+    <div id="warnDrak">
+        旋转屏幕体验更佳
+    </div>
+    <script type="text/javascript" src="./static/js/fit.js"></script>
+  </body>
+</html>
